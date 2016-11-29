@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="touch.js"></script>
+    <script src="jquery.js"></script>
+    <style>
+        body,html{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+        .img{
+            width:400%;
+            height:100%;
+        }
+        .img a{
+            width:25%;height: 100%;display: block;float: left;
+            text-align: center;color: #FFF;font-size: 20px;line-height: 100px;
+        }
+        .img a:nth-child(1){
+            background: orange;
+        }
+        .img a:nth-child(2){
+            background: blue;
+        }
+        .img a:nth-child(3){
+            background: pink;
+        }
+        .img a:nth-child(4){
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="img">
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+        </div>
+    </div>
+</body>
+<script>
+    var left;
+    var num=0;
+    var widths=$(window).width();
+   $(".box").mousedown(function (e) {
+        e.preventDefault();
+    });
+    $(".box").mousemove(function (e) {
+        e.preventDefault();
+    });
+    touch.on("body","dragstart",".img",function (e) {
+        left=parseInt($(".img").css("marginLeft"))?parseInt($(".img").css("marginLeft")):0;
+        $(".img").css({
+            transition:"none"
+        })
+    });
+    touch.on("body","drag",".img",function (e) {
+        $(".img").css({
+            marginLeft:e.x+left
+        })
+    });
+    touch.on("body","dragend",".img",function (e) {
+        if(Math.abs(e.x)>200){
+            if(e.direction=="left"){
+                num++;
+                if(num==$(".img a").length){
+                    num==$(".img a").length-1;
+                }
+            }
+            if(e.direction=="right"){
+                num--;
+                if(num==-1){
+                    num==0;
+                }
+            }
+            $(".img").css({
+                marginLeft:-num*widths,
+                transition:"margin-left 2s ease"
+            })
+        }else{
+            $(".img").css({
+                marginLeft:-num*widths,
+                transition:"margin-left 2s ease"
+            })
+        }
+    })
+</script>
+</html>
