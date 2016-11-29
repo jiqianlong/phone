@@ -1,0 +1,323 @@
+body,html,h3,h4,p{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+ul,li,h3,h4,p{
+    list-style: none;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height:60px;
+    background: #168bd8;
+    position: fixed;
+    top: 0;left: 0;z-index: 99;
+}
+.dh{
+    width: 1000px;height:60px;margin: 0 auto;display: flex;
+    justify-content: space-between;
+}
+.dh a:first-child{
+    margin-top: 10px;
+}
+.index{
+    color: #FFF;align-self: flex-end;margin-bottom: 10px;font-size: 14px;
+    font-family:"微软雅黑";
+}
+.last{
+    color: #FFF;align-self: flex-end;margin-bottom: 5px;font-size: 12px;
+    font-family: "微软雅黑";
+}
+.dh a:nth-child(5){
+    position: relative;
+}
+.logo{
+    width: 120px;height: 40px;
+    background: url("../img/logo.png") no-repeat 0 0;
+}
+.box{
+    width: 100%;
+    height:100%;
+}
+section{
+    width: 100%;height: 100%;
+}
+section:nth-child(1){
+    background: url("../img/bg1.jpg") no-repeat center;position: relative;
+}
+section:nth-child(2){
+    background: url("../img/bg2.jpg") no-repeat center;position: relative;
+}
+section:nth-child(3){
+    background: url("../img/bg3.jpg") no-repeat center;position: relative;
+}
+section:nth-child(4){
+    background: url("../img/bg4.jpg") no-repeat center;position: relative;
+}
+.lunbo{
+    width: 10px;height:80px;position: fixed;
+    right:20px;
+    top:0;bottom:0;margin: auto 0;
+}
+.lunbo li{
+    width: 10px;height: 10px;border-radius: 50%;border: 1px solid black;margin-bottom:10px;box-sizing: border-box;
+}
+.hot{
+    width: 32px;height: 25px;display: block;position: absolute;
+    right: -32px;top: -15px;background: url("../img/logo.png") no-repeat -88px -154px;
+}
+.cloud1{
+    width: 100%;height: 126px;position: absolute;bottom: 0;left: 0;
+    background: url("../img/bg2.jpg") no-repeat 0 0;z-index: 10;
+}
+.cloud1-1{
+    width: 265px;height:175px;position: absolute;left: 0;top: -50px;
+    background:url("../img/hill_1.png") no-repeat center;
+}
+.cloud1-4{
+    width: 265px;height:175px;position: absolute;right:50px;top: -47px;
+    background:url("../img/hill_3.png") no-repeat center;
+}
+.cloud1-3{
+    width: 63px;height:78px;position: absolute;right:488px;top: -13px;
+    background:url("../img/hill_2.png") no-repeat center;
+}
+.cloud1-2{
+    width: 242px;height:228px;position: absolute;left:326px;top: -191px;
+    background:url("../img/ship.png") no-repeat center;
+}
+.tiaozhuan{
+    width: 30px;height: 26px;position: absolute;left: 0;right: 0;bottom: 42px;margin:0 auto;background: url("../img/arrow.png") no-repeat center;display: block;animation: jump .5s ease infinite running alternate;
+}
+@keyframes jump {
+    0%{
+        transform: translate3d(0,0,0);
+        opacity: .5;
+    }
+    100%{
+        transform: translate3d(0,5px,0);
+        opacity: 1;
+    }
+}
+.cloud2{
+    width: 100%;height: 400px;position: absolute;left: 0;bottom:0;
+    background: url("../img/cloud_3.png") repeat;z-index: 20;
+}
+.wenzi{
+    position: absolute;width: 501px;height: 158px;left: 183px;top: -100px;
+    background: url("../img/launch.png") no-repeat center;
+}
+.feiji{
+    width: 119px;height: 78px;background: url("../img/flight.png") no-repeat center;position: absolute;right: 85px;top: -20px;animation: jumps 1.5s infinite alternate;
+}
+@keyframes jumps {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(0,10px,0);
+    }
+}
+.bottom{
+    width: 100%;position: absolute;left: 0;bottom: 0;
+}
+.center{
+    width: 1000px;margin: 0 auto;position: relative;
+}
+.rect1{
+    background: #35b568;
+    left: 70px;
+    width: 44px;
+    height: 44px;
+    bottom: 0;
+}
+.rect2{
+    width: 88px;height: 88px;position:absolute;bottom: 0;    background: #4ac179;
+    left: 158px;
+}
+.rect3{
+    background: #8ae75a;
+    position: absolute;
+    left: 246px;
+    width: 44px;
+    height: 44px;
+    bottom: 0;
+}
+.rect4{
+    background: #8ae75a;
+    right: 328px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom: 0;
+}
+.rect5{
+    background: #4ac179;
+    right: 240px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    bottom: 0;
+}
+.title{
+    width: 500px;height: 126px;position: absolute;left: 200px;top: 0;bottom:0;margin: auto 0;
+}
+.y-ain{
+    width: 66px;height: 126px;float: left;background: url("../img/h_lingxian.png") no-repeat center;
+}
+.quanmian{
+     background: url("../img/h_quanmian.png") no-repeat center;
+ }
+.zhuanye{
+    background: url("../img/h_zhuanye.png") no-repeat center;
+}
+.text{
+    margin-left: 86px;margin-top: 8px;
+}
+.text h4{
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 48px;
+    margin-bottom: 6px;
+    color: #FFF;
+}
+.text p{
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    opacity: .8;
+    color: #FFF;
+}
+.tree{
+    width: 444px;height: 427px;background: url("../img/brain.png") no-repeat center;position: absolute;right:200px;bottom:80px;
+}
+.quan{
+    background: url("../img/allside.png") no-repeat center;
+}
+.zhuan{
+    background: url("../img/stat.png") no-repeat center;
+    width: 603px;height: 361px;
+}
+.biaodan{
+    width: 340px;height: 300px;border-radius: 5px;background: #4ebffc;
+    position: absolute;right:180px;top:-100px;
+}
+.biaodan form{
+    padding-top: 26px;border-radius: 3px;
+}
+.biaodan .login-info{
+    padding: 0 20px;
+}
+.biaodan .login-action{
+    padding: 0 20px;
+}
+.login-info .account{
+    width: 299px;height: 40px;background: #FFF;color: #666;
+}
+.account span{
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 12px 3px 0 10px;
+    background: url("../img/icons.png") no-repeat -124px -12px;
+}
+.account input{
+    float: left;
+    width: 252px;
+    padding: 9px;
+    height: 20px;
+    border: none;
+}
+.login-info .password{
+    width: 299px;height: 40px;background: #FFF;color: #666;
+}
+.password span{
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 12px 3px 0 10px;
+    background: url("../img/icons.png") no-repeat -140px -12px;
+}
+.password input{
+    float: left;
+    width: 252px;
+    padding: 9px;
+    height: 20px;
+    border: none;
+}
+.error{
+    height: 20px;
+    line-height: 20px;
+    vertical-align: top;
+    color: #dd4545;
+    visibility: hidden;
+    font-size: 13px;
+    max-width: 270px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+.token input{
+    padding: 9px;
+    float: left;
+    height: 20px;
+    background: #FFF;width: 122px;border: none;
+}
+.token img{
+    float: left;margin-left: 10px;border: 0;
+}
+.token a{
+    margin: 10px 0 0 10px;
+    font-size: 12px;color: #FFF;cursor: pointer;
+}
+.submit{
+    border: 0;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    width: 299px;
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.other{
+    margin: 12px 0 8px;
+    font-size: 12px;
+    color: #9dbcdb;
+}
+.fl{
+     float: left;
+ }
+.fl a{
+    color: #FFF;
+}
+.fr a{
+    color: #FFF;
+}
+.fr{
+    float: right;
+}
+.fl span{
+    display: block;
+    float: left;
+    width: 15px;
+    height: 17px;
+    background: url(../img/icons.png) no-repeat -203px -75px;
+    margin: 2px 4px 0 0;
+}
