@@ -20,25 +20,101 @@ header{
     top: 0;left: 0;z-index: 99;
 }
 .dh{
-    width: 1000px;height:60px;margin: 0 auto;display: flex;
+    width: 100%;height:60px;margin: 0 auto;display: flex;
     justify-content: space-between;
 }
-.dh a:first-child{
-    margin-top: 10px;
+.max{
+    display: none;
+}
+.min{
+    display: flex;position: relative;
+}
+.dh-min{
+    width: 100%;position: absolute;top: 60px;left: 0;align-content: space-between;transform-style: preserve-3d;
+    display: none;
+}
+.sceen{
+    position: absolute;left: 0;top: 0;
+    width: 100%;
+    perspective: 500px;
+}
+.dh-min a{
+    display: block;font-size: 16px;text-align: center;background: #ccc;line-height: 40px;opacity: 0;width: 100%;
+}
+@media screen and (min-width: 1000px){
+    .dh{
+        width: 1000px;height:60px;margin: 0 auto;display: flex;
+        justify-content: space-between;
+    }
+    .max{
+        display: flex;
+    }
+    .min{
+        display: none;
+    }
+    .dh a:nth-child(5){
+        position: relative;margin-left: 200px;
+    }
+    .dh a:nth-child(2){
+        position: relative;margin-left: 50px;
+    }
+    .dh a:first-child{
+        margin-top: 10px;
+    }
+    .index{
+        color: #FFF;align-self: flex-end;margin-bottom: 10px;font-size: 14px;
+        font-family:"微软雅黑";
+    }
+    .last{
+        color: #FFF;align-self: flex-end;margin-bottom: 5px;font-size: 12px;
+        font-family: "微软雅黑";
+    }
 }
 .index{
-    color: #FFF;align-self: flex-end;margin-bottom: 10px;font-size: 14px;
+    color: #FFF;align-self: flex-end;
     font-family:"微软雅黑";
 }
 .last{
-    color: #FFF;align-self: flex-end;margin-bottom: 5px;font-size: 12px;
-    font-family: "微软雅黑";
+    color: #FFF;align-self: flex-end;font-family: "微软雅黑";
+}
+.min .logo{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@keyframes menu {
+    0%{
+        opacity: 0;
+        transform:rotateX(-90deg);
+    }
+    100%{
+        opacity: 1;
+        transform:rotateX(0deg);
+    }
+}
+@keyframes menu1 {
+    0%{
+        opacity: 1;
+        transform:rotateX(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform:rotateX(-90deg);
+    }
+}
+.min .menu{
+    width: 40px;height: 40px;position: absolute;right: 30px;top: 10px;
+}
+.menu .menu-tline{
+    width: 30px;height: 2px;position: absolute;top: 15px;left: 10px;background: #FFF;transition: transform .5s ease;
+}
+.menu .menu-bline{
+    width: 30px;height: 2px;position: absolute;bottom: 15px;left: 10px;background: #FFF;transition: transform .5s ease;
 }
 .dh a:nth-child(5){
-    position: relative;margin-left: 200px;
+    position: relative;
 }
 .dh a:nth-child(2){
-    position: relative;margin-left: 50px;
+    position: relative;
 }
 .logo{
     width: 120px;height: 40px;
@@ -62,6 +138,25 @@ section:nth-child(3){
 }
 section:nth-child(4){
     background: url("../img/bg4.jpg") no-repeat center;position: relative;
+}
+.sky{
+    width: 200%;animation: sky 15s linear infinite;
+}
+.sky-cloud1{
+    float: left;
+    width: 50%;height: 200px;background: url("../img/cloud.png") no-repeat;
+}
+.sky-cloud2{
+    float: left;
+    width: 50%;height: 200px;background: url("../img/cloud.png") no-repeat;
+}
+@keyframes sky {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-50%,0);
+    }
 }
 .lunbo{
     width: 10px;height:80px;position: fixed;
@@ -110,7 +205,7 @@ section:nth-child(4){
 }
 .cloud2{
     width: 100%;height: 400px;position: absolute;left: 0;bottom:0;
-    background: url("../img/cloud_3.png") repeat;z-index: 20;
+    backgr ound: url("../img/cloud_3.png") repeat;z-index: 20;
 }
 .wenzi{
     position: absolute;width: 501px;height: 158px;left: 183px;top: -100px;
@@ -169,10 +264,18 @@ section:nth-child(4){
     bottom: 0;
 }
 .title{
-    width: 500px;height: 126px;position: absolute;left: 200px;top: 0;bottom:0;margin: auto 0;
+    width: 500px;height: 126px;position: absolute;left: 200px;top: 0;bottom:0;margin: auto 0;transform:translate(-100px,0);transition: transform 1s linear,opacity 2s linear;opacity: 0;
 }
 .y-ain{
-    width: 66px;height: 126px;float: left;background: url("../img/h_lingxian.png") no-repeat center;
+    width: 66px;height: 126px;float: left;background: url("../img/h_lingxian.png") no-repeat center;animation:zhuan 1.5s 2s infinite alternate;
+}
+@keyframes zhuan{
+    0%{
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100%{
+        transform: rotate3d(0,360,0,360deg);
+    }
 }
 .quanmian{
      background: url("../img/h_quanmian.png") no-repeat center;
@@ -199,7 +302,7 @@ section:nth-child(4){
     color: #FFF;
 }
 .tree{
-    width: 444px;height: 427px;background: url("../img/brain.png") no-repeat center;position: absolute;right:200px;bottom:80px;
+    width: 444px;height: 427px;background: url("../img/brain.png") no-repeat center;position: absolute;right:200px;bottom:80px;transform:translate(200px,0);transition: transform 1s linear,opacity 2s linear;opacity: 0;
 }
 .quan{
     background: url("../img/allside.png") no-repeat center;
