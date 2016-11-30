@@ -12,10 +12,10 @@ $(function () {
         e.preventDefault();
     })
     touch.on("body","swipeup",".box",function () {
-        num++;
         if (!falg){
             return ;
         }
+        num++;
         if (num==$("section").length){
             num=$("section").length-1;
             return ;
@@ -33,10 +33,10 @@ $(function () {
         falg=false;
     })
     touch.on("body","swipedown",".box",function () {
-        num--;
         if (!falg){
             return ;
         }
+        num--;
         if (num==-1){
             num=0;
             return ;
