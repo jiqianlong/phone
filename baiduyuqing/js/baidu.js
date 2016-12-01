@@ -57,38 +57,28 @@ $(function () {
     $(".box")[0].addEventListener("webkitTransitionEnd",function () {
         falg=true;
        $(".dong").each(function (index,obj) {
-           if (num==0){
-               // $(".left").eq(index).css({
-               //     transform:"translate(0,0)",
-               //     opacity:0
-               // })
-               // $(".right").eq(index).css({
-               //     transform:"translate(0,0)",
-               //     opacity:0
-               // })
+           if (index==0){
                return ;
            }
-           if(num!=0){
                if (index==num){
                    $(".left").eq(index).css({
                        transform:"translate(0,0)",
-                       opacity:0
+                       opacity:1
                    })
                    $(".right").eq(index).css({
                        transform:"translate(0,0)",
-                       opacity:0
+                       opacity:1
                    })
                }else{
                    $(".left").eq(index).css({
-                       transform:"translate(50px,0)",
-                       opacity:1
+                       transform:"translate(-50px,0)",
+                       opacity:0
                    })
                    $(".right").eq(index).css({
-                       transform:"translate(-50px,0)",
-                       opacity:1
+                       transform:"translate(50px,0)",
+                       opacity:0
                    })
                }
-           }
        })
     })
     //菜单控制
