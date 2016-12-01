@@ -58,7 +58,17 @@ $(function () {
         falg=true;
        $(".dong").each(function (index,obj) {
            if (index==0){
+               $(".cloud1-2").css({
+                  transform:"translate(0,0)",
+                   transition: "transform 2s linear"
+               })
                return ;
+           }
+           if (num!=0){
+               $(".cloud1-2").css({
+                   transform:"translate(-30px,0)",
+                   transition: "transform 2s linear"
+               })
            }
                if (index==num){
                    $(".left").eq(index).css({
