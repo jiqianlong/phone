@@ -126,6 +126,51 @@ $(function () {
             },1700)
         }
     })
+    $(".dong .tiaozhuan").click(function () {
+        num=$(this).index(".tiaozhuan")+1;
+        $(".box").css({
+            marginTop:-(num)*h,
+            transition:"margin-top 1s ease"
+        })
+    })
+    function up() {
+        num--;
+        if(num==-1){
+            num=0;
+        }
+        $(".box").css({
+            marginTop:-(num)*h,
+            transition:"margin-top 1s ease"
+        })
+        $(".lunbo li").css({
+            background:"none"
+        })
+        $(".lunbo li").eq(num).css({
+            background:"#333"
+        })
+    }
+    function down() {
+        num++;
+        if(num==$("section").length){
+            num=$("section").length-1;
+        }
+        $(".box").css({
+            marginTop:-(num)*h,
+            transition:"margin-top 1s ease"
+        })
+        $(".lunbo li").css({
+            background:"none"
+        })
+        $(".lunbo li").eq(num).css({
+            background:"#333"
+        })
+    }
+    var box=$(".box")[0];
+    mouseWheel(box,function () {
+        up();
+    },function () {
+        down();
+    })
     $(window).resize(function () {
         var w=$(window).width();
         h=$(window).height();
