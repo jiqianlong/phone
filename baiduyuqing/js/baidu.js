@@ -134,6 +134,9 @@ $(function () {
         })
     })
     function up() {
+        if(!falg){
+            return ;
+        }
         num--;
         if(num==-1){
             num=0;
@@ -148,8 +151,12 @@ $(function () {
         $(".lunbo li").eq(num).css({
             background:"#333"
         })
+        falg=false
     }
     function down() {
+        if(!falg){
+            return ;
+        }
         num++;
         if(num==$("section").length){
             num=$("section").length-1;
@@ -164,6 +171,7 @@ $(function () {
         $(".lunbo li").eq(num).css({
             background:"#333"
         })
+        falg=false;
     }
     var box=$(".box")[0];
     mouseWheel(box,function () {
