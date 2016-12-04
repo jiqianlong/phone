@@ -1,0 +1,333 @@
+html,body{
+    height: 100%;width: 100%;padding: 0;margin: 0;
+}
+h1,h2,h3,h4,ul,p,span,li,img{
+    list-style: none;margin: 0;padding: 0;
+}
+a{
+    text-decoration: none;list-style: none;margin: 0;padding: 0;
+}
+/*首页*/
+.box{
+    width: 100%;height: 100%;
+}
+header{
+    width: 100%;height: 1rem;background: #666;position: relative;
+}
+.login{
+    width: 1rem;height: 100%;background:url(../img/login.png) no-repeat center;float: left;background-size:50% 50%;padding: .2rem .2rem;box-sizing: border-box;
+}
+.menu{
+    width: 1rem;height: 100%;float: right;position: relative;
+}
+.menu-list{
+    width: 100%;position: absolute;top: 1.8rem;left: 0;
+    z-index: 99;opacity: 0.7;
+}
+.menu-list a{
+    width: 100%;text-align: center;font-size: 16px;display:block;line-height: .6rem;padding-top:0.2rem ;color: #FFF;background: black;
+    opacity: 0;
+}
+@keyframes menu {
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+@keyframes menu1 {
+    0%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+}
+.line1{
+    width: 0.5rem;height: 0.03rem;position: absolute;left: 0;right: 0;margin: 0 auto;background: #FFF;top: 0.45rem;transition: transform 1s linear;
+}
+.line2{
+    width: 0.5rem;height: 0.03rem;position: absolute;left: 0;right: 0;margin: 0 auto;background: #FFF;top: 0.45rem;margin-top: 0.1rem;
+    transition: transform 1s linear;
+}
+.logo{
+    width: 2.4rem;height: 100%;background: url(../img/logo.png) no-repeat center;position: absolute;left: 0;right: 0;margin: 0 auto;
+    background-size: 100% 50%;
+}
+.fj{
+    width: 100%;height: 0.04rem;background: #F6F6F6;
+    border-top:1px solid #D51C1C;border-bottom:1px solid #D51C1C;
+}
+.dh{
+    width: 100%;height: 0.7rem;background: #FF3333;padding:0.12rem 0.4rem;display: flex;justify-content: space-between;box-sizing: border-box;
+}
+.dh a{
+    color: #FFF;font-size: 0.2rem;display: block;height: 100%;opacity: 0.7;text-align: center;line-height: 0.4rem;
+}
+.banner{
+    width: 100%;height: 3.5rem;position: relative;overflow: hidden;
+}
+.banner-tit{
+    font-size: .32rem;
+    width: 6.9rem;
+    height: .9rem;
+    line-height: 1rem;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 0 .3rem;
+}
+.listbox{
+    width: 100%;border-top:1px solid #E5E5E5;
+}
+.listbox h3{
+    font-size: 0.4rem;font-weight: 200;padding-left: 0.6rem;
+    color: #1876FA;background: #F6F6F6;padding-top: 0.3rem;
+}
+.newsbox{
+    width: 100%;
+}
+section{
+    width: 100%;background: #F6F6F6;
+}
+.news{
+    padding: 0.2rem 0;overflow: hidden;margin-left:0.3rem;margin-right: .3rem;border-top:1px solid #E5E5E5;
+}
+.newsimg{
+    width: 27%;height: 1.4rem;float: left;position: relative;
+}
+.newsimg img{
+    margin-right: .2rem;width: 90%;position: absolute;left: 0;top: 0;display: block;
+}
+.newstext{
+    width:73%;float: left;
+}
+.newstitle{
+    width: 100%;line-height: .42rem;font-size: .34rem;
+    margin-bottom: .2rem;
+}
+.newstitle span{
+    line-height: .42rem;font-size: .34rem;color: #404040;
+}
+.clearfix1{
+    overflow: hidden;float: left;
+}
+.clearfix2{
+    float: right;line-height: .4rem;overflow: hidden;
+}
+.clearfixtitle{
+    padding: 2px;display:block;
+    font-size: 12px;
+    box-sizing: border-box;
+    color: rgba(255,51,51,0.9);
+    margin-right: .1rem;
+    float: left;
+    background: url(../img/border_red.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.clearfixtime{
+    float: left;
+    font-size: .24rem;
+    color: #888;line-height: .4rem;
+}
+.itext{
+    font-size: .24rem;float: left;
+}
+.icon{
+    font-size: .24rem;float: left;padding-right: 0.1rem;
+}
+/*列表页*/
+.header{
+    width: 100%;height: 49px;background: #FF3333;
+}
+.logo1{
+    display: block;
+    width: 68px;height:49px;background: url(../img/nelogo.png) no-repeat;
+    background-size: contain;float: left;
+}
+.sport{
+    width: 118px;
+    height: 16px;
+    margin: 17px 0 16px 10px;
+    display: inline-block;
+    float: left;
+    background: url(../img/sports.png) no-repeat;
+    background-size: contain;
+}
+.nav{
+    width: 100%;background: #F7F7F7;
+}
+.mainshow{
+    display:block;
+    width: 100%;
+}
+.mainshow img{
+    display: block;
+}
+.nav-list{
+    margin: 10px 2% 0;overflow: hidden;
+}
+.nav-list a{
+    display:inline-block;
+    float: left;
+    border: 1px solid #d0d0d0;
+    border-radius: 14px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 5px 10px 0;
+    color: #828282;
+    padding: 0 7px;
+}
+section h2{
+    margin: 0 1px 10px;
+    color: #6f7071;
+    font-size: 16px;
+    background: #e9e9e9;
+    padding: 11px 4% 10px;
+    font-weight: normal;
+}
+.red{
+    color: #df191e;
+}
+.list-box{
+    width: 100%;
+}
+.list-box li{
+    margin: 0 4.2%;
+    line-height: 35px;
+}
+.list-box>li:first-child{
+    padding: 0 0 10px 0;
+}
+.list-box .list-sprot{
+    border-bottom: 1px solid #e6e6e6;
+    height: 56px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.list-sprot .sport-img{
+    float: left;
+    width: 70px;
+    height: 52px;
+    margin-right: 4%;
+    margin-top: 5px;
+}
+.list-sprot .sport-con{
+    float: right;display: block;width: 72%;
+}
+.sport-con .sport-con1{
+    color: #000;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+}
+.sport-con p{
+    height: 18px;position: relative;
+}
+.sport-con p .tips{
+    bottom: 2px;
+    color: #808080;
+    font-size: 12px;
+    height: 13px;
+    line-height: 13px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+/*新闻详情页*/
+.news-show{
+    width: 118px;
+    height: 16px;
+    margin: 17px 0 16px 10px;
+    display: inline-block;
+    float: left;
+    background: url(../img/news.png) no-repeat;
+    background-size: contain;
+}
+.guanggao{
+    display: block;width: 100%;height:60px;position: relative;overflow: hidden;
+}
+.popo{
+    font-size: .24rem;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    box-sizing: border-box;
+    padding: 1px 2px 1px 6px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: .15rem;
+    background: rgba(0,0,0,.5);
+}
+.guanggao img{
+    width: 100%;display: block;
+}
+.show-nav{
+    background-color: #f6f6f6;
+    padding: 0 .8rem .4rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.show-tit{
+    padding: 1.6rem 0 0;width: 100%;
+}
+.show-title{
+    font-size: 1.46rem;
+    color: #404040;
+    padding: 0 0 .4rem;
+    font-weight: 600;
+}
+.show-info{
+    margin: 0 0 .12rem;
+    overflow: hidden;
+}
+.show-time{
+    font-weight: 400;float: left;font-size: .88rem;
+    color: #888;margin-right: .88rem;
+}
+.show-src{
+    font-weight: 400;float: left;font-size: .88rem;
+    color: #888;
+}
+.show-con{
+    width: 100%;
+}
+.show-photo{
+    text-align: center;
+    padding: 1.2rem 0;
+}
+.show-photo img{
+    width: 100%;
+}
+.show-con p{
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+    color: #404040;
+}
+.show-con .editor-title{
+    text-indent: 0;
+    padding: .3rem 0 0;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    color: #404040;
+}
+.show-con .editor-info{
+    text-align: right;
+}
