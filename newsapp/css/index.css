@@ -259,7 +259,7 @@ section h2{
     background-size: contain;
 }
 .guanggao{
-    display: block;width: 100%;height:60px;position: relative;overflow: hidden;
+    display: block;width: 100%;position: relative;overflow: hidden;
 }
 .popo{
     font-size: .24rem;
@@ -282,10 +282,10 @@ section h2{
     border-bottom: 1px solid #e6e6e6;
 }
 .show-tit{
-    padding: 1.6rem 0 0;width: 100%;
+    padding: .67rem 0 0;width: 100%;
 }
 .show-title{
-    font-size: 1.46rem;
+    font-size: .64rem;
     color: #404040;
     padding: 0 0 .4rem;
     font-weight: 600;
@@ -295,11 +295,11 @@ section h2{
     overflow: hidden;
 }
 .show-time{
-    font-weight: 400;float: left;font-size: .88rem;
+    font-weight: 400;float: left;font-size: .12rem;
     color: #888;margin-right: .88rem;
 }
 .show-src{
-    font-weight: 400;float: left;font-size: .88rem;
+    font-weight: 400;float: left;font-size: .12rem;
     color: #888;
 }
 .show-con{
@@ -307,7 +307,11 @@ section h2{
 }
 .show-photo{
     text-align: center;
-    padding: 1.2rem 0;
+    padding: .23rem 0;
+    line-height: .46rem;
+}
+.show-photo span{
+    font-size: .46rem;
 }
 .show-photo img{
     width: 100%;
@@ -316,8 +320,8 @@ section h2{
     text-indent: 2em;
     text-align: justify;
     line-height: 1.5em;
-    padding: 1.2rem 0;
-    font-size: 1.2rem;
+    padding: .23rem 0;
+    font-size: .46rem;
     color: #404040;
 }
 .show-con .editor-title{
@@ -325,9 +329,51 @@ section h2{
     padding: .3rem 0 0;
     text-align: justify;
     line-height: 1.5em;
-    font-size: 1.2rem;
+    font-size: .46rem;
     color: #404040;
 }
 .show-con .editor-info{
     text-align: right;
+}
+/*引导页*/
+.top{
+    width: 100%;height: 6.63rem;background: #28db77;position: relative;
+}
+.bottom{
+    width: 100%;height: 6.71rem;background: #21cf6e;
+}
+.center{
+    width: 6.8rem;height: 5.85rem;position: absolute;bottom: -2.7rem;left: 0;right: 0;margin: 0 auto;
+}
+.top-top{
+    width: 6.25rem;height: 2.76rem;position: absolute;
+    top: 0.87rem;left:0;right:0;margin: 0 auto;
+}
+.sp1-img1{
+    position: absolute;left: 0;bottom: 0;width: 2.07rem;
+}
+.sp1-img2{
+    position: absolute;left: 0;top: 0;right:0;margin: 0 auto;width: 1.74rem;
+}
+.sp1-img3{
+    position: absolute;right: 0;bottom: 0;width: 1.85rem;
+}
+.sp1-img4{
+    position: absolute;top: 0;bottom: 0;left: 0;margin:auto 0;width: 2.34rem;
+}
+.sp1-img5{
+    position: absolute;right: -0.1rem;bottom: 0;width: 5.22rem;
+}
+.sp1-img6{
+    position: absolute;left: 0;top: 0;width: 5.22rem;
+}
+.bottom-bottom{
+    width: 5rem;height: 1.2rem;position: absolute;left: 0;right: 0;
+    margin: 0 auto;bottom:2rem;
+}
+.join{
+    display: block;width:2.5rem;height: 0.5rem;margin: 0 auto;
+    border: 1px solid #fff;border-radius:14px;position: absolute;
+    left: 0;right: 0;bottom: -0.4rem;color: #FFFFFF;font-size: 0.2rem;
+    text-align: center;line-height: 0.5rem;
 }

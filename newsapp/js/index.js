@@ -11,7 +11,6 @@ $(function () {
         }
     }
     reserve(1334,"y");
-    var swiper = new Swiper('.swiper-container',{});
     /*下拉菜单*/
     var falg=true;
     $(".menu").click(function(){
