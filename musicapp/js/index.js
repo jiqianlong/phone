@@ -42,7 +42,26 @@ $(function () {
             transition:"transform .5s linear"
         })
     })
-
+    $(".linebox").click(function () {
+        $(".mrlist").css({
+            transform:"translate(0,5rem)",
+            transition:"transform .5s linear"
+        })
+    })
+    var muss=document.getElementsByClassName("mus");
+    $(".mrlist li").click(function () {
+        var index=$(this).index(".mrlist li");
+        alert(index)
+        if(index==0){
+            return;
+        }else{
+            muss[index].style.autoplay="autoplay";
+        }
+        $(".mrlist").css({
+            transform:"translate(0,5rem)",
+            transition:"transform .5s linear"
+        })
+    })
 
 
 

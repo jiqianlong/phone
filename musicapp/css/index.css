@@ -279,10 +279,22 @@ body {
     width: 10px;height: 10px;float: left;background: yellow;border-radius: 50%;margin-top: -3px;box-shadow: 0 0 50px black;
 }
 .mrlist{
-    width: 100%;position: absolute;top: -3.6rem;left: 0;z-index: -1;height: 3.6rem;overflow: auto;transform: translate(0,5rem);
+    width:100%;position: absolute;top: -3.6rem;left: 0;height: 3.6rem;overflow: auto;transform: translate(0,5rem);opacity: 0.7;
 }
 .mrlist li{
-    width: 100%;padding: 0.2rem 0.2rem;border-bottom: 1px solid #CCC;font-size: 0.2rem;background: #333333;color: #FFF;
+    width: 100%;padding: 0.2rem 0.2rem;border-bottom: 1px solid #CCC;font-size: 0.2rem;background: #333333;color: #FFF;cursor: pointer;
+}
+.mrlist li:first-child{
+    font-size: .3rem;text-align: center;cursor: none;position: relative;
+}
+.linebox{
+    width: .5rem;height: .5rem;position: absolute;right: .4rem;top: .15rem;cursor: pointer;
+}
+.line1{
+    width: .5rem;height: 2px;position: absolute;top: .2rem;left: 0;background: #FFF;transform:translate(0,.05rem) rotate(45deg);
+}
+.line2{
+    width: .5rem;height: 2px;position: absolute;top: .3rem;left: 0;background: #FFF;transform:translate(0,-.05rem) rotate(-45deg);
 }
 /*MV页面*/
 .showlist{
